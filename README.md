@@ -6,8 +6,6 @@ This project is a recruitment task implemented using SAPUI5/OpenUI5.
 
 Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of [Node.js and npm](https://nodejs.org/)
-* You have a Windows/Linux/Mac machine.
-* You have read [SAPUI5 documentation](https://sapui5.hana.ondemand.com/).
 
 ## Installing UI5 Recruitment Task
 

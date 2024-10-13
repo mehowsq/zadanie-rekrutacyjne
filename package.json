@@ -1,0 +1,19 @@
+{
+  "name": "recruitment-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ui5 serve -o index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@ui5/cli": "^4.0.8"
+  },
+  "dependencies": {
+    "ui5-middleware-simpleproxy": "^3.3.0"
+  }
+}

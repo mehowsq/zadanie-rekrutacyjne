@@ -1,0 +1,54 @@
+<mvc:View
+    controllerName="recruitment.task.controller.Customers"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Lista klientów" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <Table
+                id="customersTable"
+                items="{/Customers}"
+                fixedLayout="false">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="Klienci"/>
+                        <ToolbarSpacer/>
+                        <SearchField width="50%" search=".onFilterCity" placeholder="Filtruj po mieście"/>
+                    </Toolbar>
+                </headerToolbar>
+                <columns>
+                    <Column>
+                        <header>
+                            <HBox alignItems="Center">
+                                <Text text="Nazwa firmy" class="sapUiTinyMarginEnd"/>
+                                <Button icon="sap-icon://sort" press=".onSortCompanyName" type="Transparent"/>
+                            </HBox>
+                        </header>
+                    </Column>
+                    <Column>
+                        <Text text="Adres"/>
+                    </Column>
+                    <Column>
+                        <Text text="Miasto"/>
+                    </Column>
+                    <Column>
+                        <Text text="Kod pocztowy"/>
+                    </Column>
+                    <Column>
+                        <Text text="Numer telefonu"/>
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{CompanyName}"/>
+                            <Text text="{Address}"/>
+                            <Text text="{City}"/>
+                            <Text text="{PostalCode}"/>
+                            <Text text="{Phone}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

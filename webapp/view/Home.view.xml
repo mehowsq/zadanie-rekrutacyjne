@@ -1,0 +1,13 @@
+<mvc:View
+    controllerName="recruitment.task.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page title="Zadanie rekrutacyjne TOYA S.A.">
+        <content>
+            <VBox alignItems="Center" justifyContent="Center" height="100%">
+                <Title text="Zadanie rekrutacyjne TOYA S.A." class="sapUiMediumMarginBottom"/>
+                <Button text="Pokaż dane klientów" press=".onShowCustomers" class="sapUiSmallMarginBottom"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
